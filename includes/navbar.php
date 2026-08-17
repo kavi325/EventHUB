@@ -5,8 +5,8 @@
         <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
             <img src="assets/images/logo.png" alt="EventHub Logo" height="42" class="me-2">
 
-            <span class="text-dark">Event</span>
-            <span style="color: var(--primary);">Hub</span>
+            <span class="text-dark">NSBM Event</span>
+            <span >Hub</span>
         </a>
 
         <!-- Mobile Toggle -->
@@ -31,7 +31,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Clubs</a>
+                    <a class="nav-link" href="clubs.php">Clubs</a>
                 </li>
 
                 <li class="nav-item">

@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f4f7f6;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Section - Image & Overlay */
+.left-section {
+    flex: 1.1;
+    background: url('../images/nsbm-campus.png') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(20, 110, 60, 0.85), rgba(10, 70, 35, 0.9));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    color: white;
+}
+
+.top-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+}
+
+.welcome-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.welcome-content h1 span {
+    color: #a3e4d7;
+}
+
+.welcome-content p {
+    font-size: 16px;
+    color: #e8f8f5;
+    max-width: 400px;
+}
+
+/* Right Section - Form */
+.right-section {
+    flex: 0.9;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.portal-badge {
+    background: #e8f8f5;
+    color: #117a65;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.form-container h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+.name-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 6px;
+}
+
+.input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-field i:not(.toggle-password) {
+    position: absolute;
+    left: 14px;
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.input-field input, .input-field select {
+    width: 100%;
+    padding: 11px 15px 11px 40px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fdfefe;
+}
+
+.input-field select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.input-field input:focus, .input-field select:focus {
+    border-color: #27ae60;
+    box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.toggle-password {
+    position: absolute;
+    right: 14px;
+    cursor: pointer;
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #27ae60;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.submit-btn:hover {
+    background: #219653;
+}
+
+.login-redirect {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #7f8c8d;
+}
+
+.login-redirect a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .left-section {
+        display: none;
+    }
+    .right-section {
+        flex: 1;
+    }
+}
